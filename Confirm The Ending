@@ -1,0 +1,24 @@
+function end(str, target) {
+  // "Never give up and good luck will find you."
+  // -- Falcor
+  var amount_Of_Words = str.split(" ").length;
+  var more= str.split(" ");
+  
+  
+  if(amount_Of_Words>1){
+    var lastWord=more[more.length-1];
+    if(lastWord.substr(lastWord.length-target.length)==target){
+      return true;
+    }
+    return false;
+    
+  }else{
+      if(str.charAt(str.length-1)==target){
+      return true;
+  }
+  
+  return false;
+  }//end if for one word
+}
+
+end("He has to give me a new name", "name");
