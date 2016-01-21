@@ -1,0 +1,15 @@
+function repeat(str, num) {
+  // repeat after me
+  var repeat = str;
+    if(num<0){
+      repeat ="";
+    }else{
+      for(var i=0;i<num-1;i++){
+        repeat+=str;
+      }
+    }return repeat;
+}
+  
+
+
+repeat("abc", -2);
